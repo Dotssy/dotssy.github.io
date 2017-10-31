@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: MyriadPro-Bold;
+  src: url(../fonts/MyriadPro-Bold.otf);
+}
+
+@font-face {
+  font-family: MyriadPro-Regular;
+  src: url(../fonts/MyriadPro-Regular.otf);
+}
+
+@font-face {
+  font-family: Rokkitt;
+  src: url(../fonts/Rokkitt-regular.ttf);
+}
+
+@font-face {
+  font-family: quicksand-regular;
+  src: url(../fonts/quicksand-light-regular.otf);
+}
+
+body {
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  height: 500px;
+  background-image: url(../images/header.png);
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  text-align: center;
+}
+
+hr {
+  margin: 22px auto;
+  background-color: #fff;
+  color: #fff;
+  outline: 0;
+}
+
+h1 {
+  padding-top: 18.5%;
+  font-family: Rokkitt;
+  font-size: 60px;
+  color: #fff;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: quicksand-regular;
+  font-size: 22px;
+  color: #fff;
+  font-weight: normal;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom: 1px solid #cd412f;
+  transition: border-bottom 0.9s ease;
+}
+
+
+/* NAVIGATION */
+
+
+.fixed-nav-bar {
+  box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.6);
+}
+
+.fixed-nav-bar {
+  font-size: 20.31px;
+  font-family: MyriadPro-Regular;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #DF4A37;
+}
+
+/* The element at the top of the page right after the fixed navigation bar
+   MUST have sufficient top margin or else it will be covered by the bar */
+.content {
+  margin-top: 20px;
+}
+
+/* Example responsive navigation menu  */
+.fixed-nav-bar li, .fixed-nav-bar a {
+  height: 50px;
+  line-height: 50px;
+}
+
+.menu {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.menu a, .menu a:visited {
+  color: #ffffff;
+}
+
+.menu a:hover, .menu a:target {
+  color: #FAD218;
+  transition: all 0.3s ease 0s;
+}
+
+.menu-items {
+  display: inline-block;
+  margin-right: 8%;
+}
+
+.sitename {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 10px;
+  float: left;
+  margin-top: 6.5px;
+  cursor: pointer;
+}
+
+a.sitename, a:visited.sitename {
+  color: #e0e0e0;
+}
+.menu-items li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+.menu-items a {
+  text-decoration: none;
+}
+
+.show, .hide {
+  text-decoration: none;
+  display: none;
+  padding-left: 15px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center left;
+  color: #dde1e2;
+}
+.show {
+  background-image: url(../images/down-arrow-icon.png);
+}
+.hide {
+  background-image: url(../images/up-arrow-icon.png);
+}
+
+@media only screen and (max-width: 800px) {
+  .menu {
+    position: relative;
+    width: 100%;
+  }
+  .sitename {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    margin-left: 0px;
+  }
+  .menu-items {
+    display: none;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #cd412f;
+  }
+  .menu-items li {
+    display: block;
+    text-align: center;
+  }
+  .show, .hide {
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+  .show {
+    display: inline-block;
+  }
+  .hide {
+    display: none;
+  }
+
+
+  #menu:target .show {
+    display: none;
+  }
+  #menu:target .hide, #menu:target .menu-items {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 220px) {
+  .sitename, .show, .hide {
+    font-size: 14px;
+  }
+}
+
+.button1 {
+  position: relative;
+  width: 203px;
+  height: 56px;
+  background-color: #e74c3c;
+  outline: 2px solid #e74c3c;
+  cursor: pointer;
+  top:-30px;
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.button1:hover {
+  background-color: #ffffff;
+  outline: 2px solid #e74c3c;
+}
+
+.button1 a {
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Rokkitt;
+  text-decoration: none;
+  padding: 16px 5px 14px 3px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.button1 a:hover {
+  color: #e74c3c;
+}
+
+/* ABOUT BLOCK */
+
+.about-block {
+  position: relative;
+  outline: 0px solid red;
+  text-align: center;
+}
+
+.about-block h2 {
+  margin-top:-65px;
+  font-size: 46px;
+  font-family: Rokkitt;
+  font-weight: bolder;
+  padding-top: 150px;
+  color: #e74c3c;
+}
+
+.about-block h3 {
+    margin-top: 50px;
+    font-family: MyriadPro-Regular;
+    font-size: 18px;
+    color: #95a5a6;
+    line-height: 30px;
+    margin-bottom: 60px;
+}
+
+.sketching h4,
+.design h4,
+.finalize h4 {
+    margin: 30px 0;
+    font-family: MyriadPro-Regular;
+    font-size: 20px;
+    color: #e74c3c;
+}
+
+.sketching p,
+.design p,
+.finalize p {
+    font-family: MyriadPro-Regular;
+    font-size: 15px;
+    color: #95a5a6;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.sketching {
+   width: 255px;
+   height: 310px;
+   outline: 0px solid green;
+   display: inline-block;
+}
+
+.design {
+   width: 255px;
+   height: 310px;
+   outline: 0px solid blue;
+   display: inline-block;
+   margin: 0 10%;
+}
+
+.finalize {
+   width: 255px;
+   height: 310px;
+   outline: 0px solid orange;
+   display: inline-block;
+}
+
+.about-block hr {
+  margin: 100px auto;
+  background-color: #e4e8e8;
+  color: #e4e8e8;
+}
+
+
+/* IMAGES BLOCK */
+
+.content h1 {
+  margin:-170px 0px 20px 0px;
+  font-size: 46px;
+  font-family: Rokkitt;
+  font-weight: bolder;
+  padding-top: 150px;
+  color: #e74c3c;
+  text-align: center;
+}
+
+
+figcaption h2 {
+  font-family: Rokkitt;
+  font-size: 31px;
+}
+
+figcaption p {
+  font-family: MyriadPro-Regular;
+  font-size: 16px;
+}
+
+.t {
+  text-align: center;
+}
+
+.button2 {
+  width: 203px;
+  
+  
+  
+  display: inline-block;
+ 
+}
+
+
+
+
+.t hr {
+  margin: 7% auto;
+  background-color: #e4e8e8;
+  color: #e4e8e8;
+}
+
+
+/* FORM BLOCK */
+
+.form-block {
+  outline: 0px solid red;
+  text-align: center;
+}
+
+
+.form-block h2 {
+  margin-top: 50px;
+  font-size: 46px;
+  font-family: Rokkitt;
+  font-weight: bolder;
+ 
+  color: #e74c3c;
+}
+
+input {
+  width: 340px;
+  height: 70px;
+  background-color: #E4E8E8;
+  border: none;
+  outline: none;
+  font-family: Rokkitt;
+  font-size: 30px;
+  color: #b5b5b5;
+  margin: 3% 1%;
+  padding-left: 2.5%;
+}
+
+textarea {
+  padding: 2% 0 0 2.5%;
+  width: 73%;
+  max-width: 710px;
+  min-width: 320px;
+  height: 250px;
+  background-color: #E4E8E8;
+  border: none;
+  outline: none;
+  font-family: Rokkitt;
+  font-size: 30px;
+  color: #b5b5b5;
+  overflow: auto;
+  resize: none;
+}
+
+
+.button3 {
+ width: 203px;
+  height: 56px;
+  background-color: #e74c3c;
+  outline: 2px solid #e74c3c;
+  cursor: pointer;
+  margin-top: 4%;
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+  margin-bottom: 12.5%;
+}
+
+.button3:hover {
+  background-color: #ffffff;
+  outline: 2px solid #e74c3c;
+}
+
+.button3 a {
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Rokkitt;
+  text-decoration: none;
+  padding: 16px 5px 14px 3px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.button3 a:hover {
+  color: #e74c3c;
+}
+
+
+/* FOOTER BLOCK */
+
+footer {
+  height: 300px;
+  position: relative;
+  text-align: center;
+  background-color: #DF4A37;
+}
+
+footer img {
+  top:-12.6%;
+   position: relative;
+  display: inline-block;
+}
+
+footer p{
+  float: right;
+  margin-top: 63px;
+  font-family: rokkitt;
+  font-size: 24px;
+  color: #fff;
+  padding: 0 9%;
+}
+
+footer .copy{
+  float: left;
+}
+
+#dribbble {
+  margin: 0 19.1%;
+}
+
+
+@media screen and (max-width: 983px) {
+  .sketching,
+  .design,
+  .finalize   {
+        width: 100%;
+  }
+
+  .sketching p,
+  .design p,
+  .finalize p   {
+        text-align: center;
+  }
+
+  .design {
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (max-width: 515px) {
+    #dribbble {
+      margin: 0 5%;
+    }
+}
+
+@media screen and (max-width: 407px) {
+    footer p {
+      padding: 0 5%;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    #dribbble {
+      margin: 0 1%;
+    }
+}

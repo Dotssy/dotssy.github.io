@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: MyriadPro-Regular;
+    src: url(../fonts/MyriadPro-Regular.otf);
+}
+
+@font-face {
+    font-family: Lato-Black;
+    src: url(../fonts/Lato-Black.ttf);
+}
+
+/* Hero Block */
+
+.hero{
+  height: 590px;
+  background-image: url(../images/hero2.png);
+  outline: 0px solid red;
+}
+
+.hero h1{
+  font-family: Lato-Black;
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 45px;
+}
+
+form{
+  text-align: center;
+}
+
+.hero select{
+  height: 60px;
+  font-family: Lato-Black;
+}
+
+.hero form select{
+  padding-top: -2px !important;
+}
+
+option{
+  height: 60px;
+  font-family: Lato-Black;
+}
+
+select:hover{
+  cursor: pointer;
+}
+
+
+input:hover{
+  cursor: text;
+}
+
+input[name='destination'] {
+    background-image: url(../images/star.png);
+    background-repeat: no-repeat;
+    background-position: 8px;
+    outline: none;
+    padding-left: 30px;
+    height: 60px;
+    font-size: 17px;
+    font-family: Lato-Black;
+}
+
+input[name='datepickerIn'],
+     [name='datepickerOut'] {
+  background-image: url(../images/datepicker.png);
+  background-repeat: no-repeat;
+  background-position: 8px;
+  outline: none;
+  padding-left: 30px;
+  height: 60px;
+  font-size: 17px;
+  font-family: Lato-Black;
+}
+
+input[name='search']{
+  height: 60px;
+  padding: 0 40px 0 40px;
+  background-color: #ffd500;
+  color: #fff;
+  font-family: Lato-Black;
+  font-size: 18px;
+}
+
+/* Destination block */
+
+.scroll {
+  text-align: center;
+  position: relative;
+  top:-43px;
+}
+
+
+.destination{
+  height: 840px;
+  outline: 0px solid red;
+  margin-bottom: -55px;
+}
+
+.destination h3{
+  margin-top: -5px;
+  font-size: 36px;
+  font-family: MyriadPro-Regular;
+  color: #00517e;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.destination p{
+  font-size: 14px;
+  font-family: MyriadPro-Regular;
+  color: #959595;
+  text-align: center;
+}
+
+.destination img{
+  margin: 12.5px 0px 25px 0px;
+}
+
+.destination img:hover{
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.button{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.button a{
+  color: #00517e;
+  font-size: 18px;
+}
+
+.button a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+.myButton{
+  width: 200px;
+  height: 40px;
+  padding: 8px 14px 8px 14px;
+  font-family: Lato-Black;
+  border: 1px solid #ffd500;
+}
+
+
+.myButton:hover{
+  background-color: #ffd500;
+  transition: background-color 0.5s ease;
+}
+
+/* Slider */
+
+.slider {
+  height: 441px; /* Update to your slider height */
+  position: relative;
+  overflow: hidden;
+}
+
+.slider li {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Seasons */
+
+.seasons{
+  margin-bottom: 50px;
+}
+
+.seasons h3{
+  font-size: 36px;
+  font-family: MyriadPro-Regular;
+  color: #00517e;
+  margin-top: 60px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.seasons p{
+  font-size: 14px;
+  font-family: MyriadPro-Regular;
+  color: #959595;
+  text-align: center;
+}
+
+.seasons img:hover{
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+
+/* Contacts */
+
+.contacts h3{
+  font-size: 36px;
+  font-family: MyriadPro-Regular;
+  color: #00517e;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.contacts p{
+  font-size: 14px;
+  font-family: MyriadPro-Regular;
+  color: #959595;
+  text-align: center;
+}
+
+.contacts {
+  background-color: #F5F5F5;
+}
+
+.contacts h4{
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: MyriadPro-Regular;
+  color: #00517e;
+}
+
+.whyMe, .contactUs, .news{
+  text-align: center;
+}
+
+.whyMe p, .contactUs p, .news p{
+  color: #000;
+}
+
+.news input{
+  height: 40px;
+}
+
+.news input[type='text']{
+  outline: 1px solid black;
+
+}
+
+.news input[type='button']{
+  background-color: #ffd500;
+  color: #fff;
+  font-family: MyriadPro-Regular;
+  padding: 7px 7px;
+  margin-left: 1px;
+}
+
+/* Scroll */
+
+.scrollup {
+    z-index: 99999;
+    width: 36px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    text-indent: -9999px;
+    background: url('../images/toTop.png') no-repeat;
+}
+
+
+/* Responsive Styles */
+
+
+@media screen and (max-width: 1200px) {
+  .destination {
+    height: 755px;
+  }
+
+  .seasons h3 {
+    margin-top: -16px;
+}
+
+}
+
+
+@media screen and (max-width: 991px) {
+  .destination {
+    height: 660px;
+  }
+
+  .seasons h3 {
+    margin-top: -100px;
+}
+
+
+}
+
+
+
+
+@media screen and (max-width: 450px) {
+  .hero h1{
+    font-size: 50px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .hero h1{
+    font-size: 50px;
+    margin-top: 10px;
+  }
+
+
+
+  .slider {
+    margin-bottom: -310px;
+  }
+}
+
+

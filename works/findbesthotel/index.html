@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Find Best Hotel</title>
+    <link rel="stylesheet" href="style/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="style/datepicker.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="style/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script>
+      $( function() {
+        $( ".datepicker" ).datepicker();
+      });
+  </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row hero">
+        <a href="click" class="scrollup"></a>
+        <h1>Look for a best hotel? It`s simple!</h1>
+        <form>
+          <input type="text" name="destination" value="" placeholder="Where we go?"><input type="text" name="datepickerIn" value="" placeholder="Check In" class="datepicker"><input type="text" name="datepickerIn" value="" placeholder="Check Out" class="datepicker"><select name="dropdown">
+            <option value="">1 Adult, 1 Room</option>
+            <option value="">2 Adults, 1 Room</option>
+            <option value="">1 Adult, 1 Children, 1 Room</option>
+            <option value="">2 Adults, 2 Children, 2 Rooms</option>
+          </select><input type="submit" name="search" value="SEARCH">
+        </form>
+      </div>
+      <div class="row destination">
+      <div class="scroll">
+        <a href="#scroll_1" class="ancLinks"><img src="images/scroll.png"></a>
+      </div>
+        <h3 id="scroll_1">Explore more Popular Destinations Worldwide</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacinia quam in diam posuere tincidunt. <br> Curabitur ex leo, facilisis et lacinia eget, elementum eget justo.</p>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 box3">
+            <a href="#"><img src="images/NewYork.png" alt="" class="img-responsive" /></a>
+          </div>
+          <div class="col-md-6 col-sm-6 box3">
+            <a href="#"><img src="images/London.png" alt="" class="img-responsive" /></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-3 box3">
+            <a href="#"><img src="images/Kiev.png" alt="" class="img-responsive" /></a>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 box3">
+            <a href="#"><img src="images/Moscow.png" alt="" class="img-responsive" /></a>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 box3">
+            <a href="#"><img src="images/Tokyo.png" alt="" class="img-responsive" /></a>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 box3">
+            <a href="#"><img src="images/Berlin.png" alt="" class="img-responsive" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="row button">
+        <a href="#" class="myButton">EXPLORE MORE</a>
+      </div>
+      <div class="row citySlider">
+        <ul class="slider">
+         <li>
+           <img src="images/Japan.jpg" class="img-responsive"/>
+         </li>
+         <li>
+           <img src="images/England.jpg" class="img-responsive"/>
+         </li>
+         <li>
+           <img src="images/USA.jpg" class="img-responsive"/>
+         </li>
+         <li>
+           <img src="images/Ukraine.jpg" class="img-responsive"/>
+         </li>
+      </ul>
+      </div>
+      <div class="row seasons">
+        <h3>Explore all seasons with comfort</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacinia quam in diam posuere tincidunt. <br> Curabitur ex leo, facilisis et lacinia eget, elementum eget justo.</p>
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-3 box3">
+            <a href="#"><img src="images/spring.jpg" alt="" class="img-responsive" /></a>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 box3">
+            <a href="#"><img src="images/summer.jpg" alt="" class="img-responsive" /></a>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 box3">
+            <a href="#"><img src="images/autumn.jpg" alt="" class="img-responsive" /></a>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 box3">
+            <a href="#"><img src="images/winter.jpg" alt="" class="img-responsive" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="row button">
+        <a href="#" class="myButton">EXPLORE MORE</a>
+      </div>
+      <div class="row contacts">
+        <h3>Still have questions? Contact Us!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacinia quam in diam posuere tincidunt. <br> Curabitur ex leo, facilisis et lacinia eget, elementum eget justo.</p>
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-4 whyMe">
+            <img src="images/house.png" alt="" />
+            <h4>Why We?</h4>
+            <p>Lorem ipsum dolor sit amet, con- <br> sectetur adipiscing elit</p>
+            <div class="row contactsButton">
+              <a href="#" class="myButton">EXPLORE MORE</a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-4 contactUs">
+            <img src="images/phone.png" alt="" />
+            <h4>Contact Us!</h4>
+            <p>Phone: 05-453-20-66 </p>
+            <p>Skype: Hotels.Skype.hk </p>
+            <p>E-mail: Hotelsmail@gmail.com </p>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-4 news">
+            <img src="images/mail.png" alt="" />
+            <h4>Want More News?</h4>
+            <p>Lorem ipsum dolor sit amet, con- <br> sectetur adipiscing elit</p>
+            <input type="text" name="mail" placeholder="Enter your Email"><input type="button" name="name" value="SIGN UP">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!--SCRIPTS-->
+  <script src="js/slider.js" charset="utf-8"></script>
+  <script src="js/scrollToTop.js" charset="utf-8"></script>
+  <script src="js/jquery.boxloader.js" charset="utf-8"></script>
+  <script src="js/scroll.js" charset="utf-8"></script>
+  </html>

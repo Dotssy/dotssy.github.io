@@ -1,0 +1,662 @@
+ @font-face {
+    font-family: Roboto-Bold; /* Имя шрифта */
+    src: url(../fonts/roboto.bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Roboto-Regular; /* Имя шрифта */
+    src: url(../fonts/roboto.regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Roboto-Light; /* Имя шрифта */
+    src: url(../fonts/roboto.light.ttf); /* Путь к файлу со шрифтом */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.row, .container-fluid, .container {
+	padding: 0;
+	margin: 0;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+header {
+  height: 800px;
+  outline: 0px solid red;
+}
+
+/* ------------------ Parallax ------------------ */
+
+
+.parallax {
+    /* The image used */
+    background-image: url(../images/background.jpg);
+
+    /* Set a specific height */
+    height: 800px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ------------------ Parallax End ------------------ */
+
+
+/* -------------------------------------------- Header -------------------------------------------- */
+
+
+/* ------------------ Content Block ------------------ */
+
+.decoration {
+  display: none;
+}
+
+.content h2 {
+	font-family: Roboto-Light;
+	font-size: 24px;
+	color: #ffffff;
+	margin-top: 270px;
+	text-align: left;
+}
+
+.content h3 {
+	text-align: left;
+	font-family: Roboto-Bold;
+	font-size: 60px;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-top: 25px;
+}
+
+.button1 {
+	width: 165px;
+	height: 55px;
+	border: 2px solid #ffffff;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 3px;
+	transition: all 0.3s ease 0s;
+	display: inline-block;
+	float: left;
+	margin-right: 25px;
+	margin-top: 20px;
+}
+
+.button1:hover {
+	background-color: #E01A13;
+	border-radius: 3px;
+	border: 2px solid #E01A13;
+}
+
+.button1 a {
+	font-size: 17px;
+	color: #ffffff;
+    cursor: pointer;
+   	font-family: Roboto-Bold;
+   	text-decoration: none;
+   	padding: 13px 0px 17px 0px;
+   	display: block;
+}
+
+.button1 a:hover {
+	color: #ffffff;
+}
+
+.button2 {
+	display: inline-block;
+	width: 205px;
+	height: 55px;
+	border: 2px solid #ffffff;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 3px;
+	float: left;
+	margin-top: 20px;
+	transition: all 0.3s ease 0s;
+}
+
+.button2:hover {
+	background-color: #E01A13;
+	border-radius: 3px;
+	border: 2px solid #E01A13;
+}
+
+.button2 a {
+	font-size: 17px;
+	color: #ffffff;
+    cursor: pointer;
+   	font-family: Roboto-Bold;
+   	text-decoration: none;
+   	padding: 13px 0px 17px 0px;
+   	display: block;
+}
+
+.button2 a:hover{
+	color: #ffffff;
+}
+
+/* ------------------ Content Block End ------------------ */
+
+
+/* -------------------------------------------- Header End -------------------------------------------- */
+
+
+/* ------------------ History Block ------------------ */
+
+#history {
+  
+  outline: 0px solid red;
+}
+
+#history h3 {
+	font-family: Roboto-Bold;
+	font-size: 48px;
+	color: #464646;
+	text-transform: uppercase;
+	margin-top: 200px;
+	outline: 0px solid red;
+}
+
+#history p {
+	font-family: Roboto-Light;
+	font-size: 17px;
+	color: #B7B7B7;
+	outline: 0px solid blue;
+	line-height: 1.8;
+	display: block;
+	padding-bottom: 50px;
+}
+
+.history-text {
+	padding-top: 95px;
+}
+
+/* ------------------ History Block End ------------------ */
+
+
+/* ------------------ Purchase Block ------------------ */
+
+#purchase {
+	outline: 0px solid blue;
+}
+
+hr {
+	background-color: #F1F1F1;
+}
+
+.header h3 {
+	text-align: center;
+	font-family: Roboto-Bold;
+	font-size:30px;
+	color: #464646;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+.header h2 {
+	text-align: center;
+	font-family: Roboto-Light;
+	font-size:18px;
+	color: #B7B7B7;
+}
+
+.purchase-list img {
+	padding-top: 42px;
+}
+
+.text-center h2 {
+	font-family: Roboto-Bold;
+	font-size:18px;
+	color: #464646;
+}
+
+.text-center p {
+	font-family: Roboto-Light;
+	font-size:16px;
+	color: #B7B7B7;
+}
+
+.purchase-margin {
+	padding-bottom: 45px;
+}
+
+ .button4 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.button4 a {
+  	font-size: 17px;
+	color: #ffffff;
+    cursor: pointer;
+   	font-family: Roboto-Bold;
+   	text-decoration: none;
+   	padding: 13px 0px 17px 0px;
+}
+
+.button4 a:hover {
+ 	color: #E01A13;
+}
+
+.myButton{
+  	width: 165px;
+	height: 55px;
+	border: 2px solid #E01A13;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 3px;
+	transition: all 0.3s ease 0s;
+	display: inline-block;
+	background-color: #E01A13;
+	margin-left: 10px;
+}
+
+
+.myButton:hover{
+  	background-color: #ffffff;
+	border-radius: 3px;
+	border: 2px solid #E01A13;
+}
+
+
+
+/* ------------------ Purchase Block End ------------------ */
+
+
+/* ------------------ Slider Block ------------------ */
+
+
+/*********************************/
+/*********************************/
+/*********************************/
+/*********************************/
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  z-index: -999;
+  }
+
+.rslides h3{
+  z-index: 999;
+}
+
+
+/* ------------------ Slider Block End ------------------ */
+
+
+/* ------------------ Why We Block ------------------ */
+
+
+#why-we img {
+	outline: 0px solid blue;
+}
+
+
+#why-we h4 {
+	font-size: 48px;
+	color: #464646;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: Roboto-Bold;
+	color: #464646;
+	outline: 0px solid red;
+	padding-bottom: 60px;
+}
+
+#why-we h3 {
+	font-family: Roboto-Bold;
+	font-size: 48px;
+	color: #464646;
+	text-transform: uppercase;
+	margin-top: 200px;
+	outline: 0px solid red;
+}
+
+#why-we h2 {
+	font-family: Roboto-Bold;
+	font-size: 18px;
+	color: #464646;
+	outline: 0px solid red;
+	margin-left: 10px;
+}
+
+#why-we p {
+	font-family: Roboto-Light;
+	font-size: 16px;
+	color: #B7B7B7;
+	outline: 0px solid red;
+	margin-left: 10px;
+	margin-bottom: 40px;
+}
+
+.why-we-margin {
+	margin-top: 100px;
+}
+
+.why-we-margin-2 {
+	margin-top: 50px;
+}
+
+
+.why-we-margin-3 {
+	margin-bottom: 150px;
+}
+
+.why-we-margin-4 {
+	margin-bottom: 70px;
+}
+
+.why-we-text {
+	margin-top: 298px;
+	line-height: 33px;
+	margin-left: 15px;
+}
+
+
+/* ------------------ Wy We Block End ------------------ */
+
+
+/* ------------------ Comments Block ------------------ */
+
+#comments {
+	background-color: #FAF9F9;
+	outline: 0px solid blue;
+}
+
+.comments-list {
+	margin-top: 50px;
+}
+
+.comments-list img {
+	float: left;
+	outline: 0px solid aqua;
+	padding-right: 20px;
+	padding-top: 10px;
+}
+
+.comments-list  h2 {
+	text-align: left;
+}
+
+.comments-list  p {
+	text-align: left;
+	padding-left: 60px;
+}
+
+.comments-margin {
+	margin-bottom: 100px;
+}
+
+/* ------------------ Comments Block End ------------------ */
+
+
+/* ------------------ Photoblog Block ------------------ */
+
+
+
+#photoblog h4 {
+	font-size: 48px;
+	color: #464646;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: Roboto-Bold;
+	color: #464646;
+	outline: 0px solid red;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+#photoblog p {
+	margin-top: 50px;
+	line-height: 33px;
+	font-family: Roboto-Light;
+	font-size: 16px;
+	color: #B7B7B7;
+	outline: 0px solid red;
+	text-align: left;
+	margin-left: 12px;
+	margin-bottom: 40px;
+}
+
+.photoblog-margin {
+	margin-bottom: 70px;
+}
+
+/* ------------------ Photoblog Block End ------------------ */
+
+
+/* ------------------ Footer ------------------ */
+
+footer {
+	background-color: #141414;
+	outline: 0px solid aqua;
+}
+
+footer h3 {
+	font-family: Roboto-Bold;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	display: inline-block;
+	margin-top: 40px;
+}
+
+footer h2 {
+	font-family: Roboto-Light;
+	font-size: 17px;
+	color: #6b6969;
+	line-height: 40px;
+	display: inline-block;
+}
+
+footer img {
+	display: inline-block;
+	float: right;
+	margin-top: 42px;
+	outline: 0px solid orange;
+	margin-left: 12px;
+}
+
+footer p {
+	font-family: Roboto-Light;
+	font-size: 17px;
+	color: #6b6969;
+	float: right;
+	margin-top: 98px;
+	padding-left: 25px;
+	display: inline-block;
+	line-height: 40px;
+}
+
+.footer-margin {
+	float: right;
+	margin-bottom: 18px;
+}
+
+.rights {
+	float: right;
+}
+
+#contacts a{
+  opacity: 0.5;
+}
+
+#contacts a:hover{
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+#contacts img {  /* -- For Opera & Chrome -- */
+	-webkit-backface-visibility: hidden;
+}
+
+
+/* ------------------ Footer End ------------------ */
+
+
+@media only screen and (max-width: 441px) {
+  .decoration {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1723px) {
+		.why-we-text {
+			margin-top: 540px;
+		}
+}
+
+@media screen and (max-width: 991px) {
+		#history h3 {
+			text-align: center;
+		}
+
+		#history p {
+			text-align: center;
+		}
+
+		#why-we h4 {
+			text-align: center;
+		}
+
+		#why-we h3 {
+			text-align: center;
+			margin-left: 20px
+		}
+
+		#why-we h2 {
+			text-align: center;
+		}
+
+		#why-we p {
+			text-align: center;
+		}
+
+		.why-we-text {
+			margin-top: 90px;
+			padding-right: 15px;
+		}
+
+		.for-media {
+			text-align: center;
+		}
+
+		.for-media2 {
+			margin-bottom: 97px;
+		}
+
+	
+		#photoblog h4 {
+			text-align: center;
+		}
+
+		#photoblog p {
+			padding-right: 12px;
+			text-align: center;
+		}
+
+		.for-media3 {
+			margin-left: 350px;
+			outline: 0px solid aqua;
+		}
+		
+}
+
+
+@media screen and (max-width: 910px) {
+		.for-media3 {
+			margin-left: 300px;
+			outline: 0px solid aqua;
+		}
+}
+
+
+@media screen and (max-width: 791px) {
+		.for-media3 {
+			margin-left: 250px;
+			outline: 0px solid aqua;
+		}
+}
+
+
+@media screen and (max-width: 691px) {
+		.for-media3 {
+			margin-left: 200px;
+			outline: 0px solid aqua;
+		}
+}
+
+
+@media screen and (max-width: 591px) {
+		.for-media3 {
+			margin-left: 200px;
+			outline: 0px solid aqua;
+		}
+}
+
+
+@media screen and (max-width: 545px) {
+		.for-media3 {
+			margin-left: 130px;
+			outline: 0px solid aqua;
+		}
+}
+
+
+@media screen and (max-width: 445px) {
+		.for-media3 {
+			margin-left: 80px;
+			outline: 0px solid aqua;
+		}
+}
+
+@media screen and (max-width: 445px) {
+		.for-media3 {
+			margin-left: 80px;
+			outline: 0px solid aqua;
+		}
+}
+
+
+
