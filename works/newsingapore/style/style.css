@@ -234,7 +234,7 @@ a.sitename, a:visited.sitename {
   cursor: pointer;
   font-family: Rokkitt;
   text-decoration: none;
-  padding: 16px 5px 14px 3px;
+  padding: 16px 5px 10px 3px;
   display: block;
   text-transform: uppercase;
   font-weight: normal;
