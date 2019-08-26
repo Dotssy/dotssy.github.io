@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>ЭкоТаймыр</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="location">
+                        <span><img src="img/location.png" alt="Location"></span>
+                        <span>Красноярск, ул. Дубровинского, 110, оф. 605</span>
+                    </div>
+                    <div class="time">
+                        <span><img src="img/alarm.png" alt="Time"></span>
+                        <span>Принимаем заказы: <span>с 9-00 до 22-00</span></span>
+                    </div>
+                    <div class="clock">
+                        <span>В Красноярске сейчас: <span id="clock"></span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-12 col-lg-4">
+                        <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="search">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Поиск по сайту..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                        <img src="img/magnifier.png" alt="Search">
+                                    </button>
+                                </div>
+                            </div>
+                        </div> <!-- search end -->
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="call-order">
+                            <div class="row no-gutters justify-content-between">
+                                <div class="col-6">
+                                    <a href="#" class="call-order-btn" id="call-order-btn" data-toggle="modal" data-target="#popup" data-whatever="modal">
+                                        Заказать звонок
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <div class="phones">
+                                        <div><a href="tel:89082242244">8 (908) 224-22-44</a></div>
+                                        <div><a href="tel:89504222440">8 (950) 422-24-40</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- call-order end -->
+                    </div>
+                </div>
+            </div>
+        </div> <!-- header-middle end -->
+        <nav class="nav nav-desktop">
+            <div class="container">
+                <div class="row no-gutters justify-content-between align-items-center">
+                    <div class="col-md-3">
+                        <div class="catalog-btn">
+                            <a href="#">
+                                <span class="middle burger-icon"></span>
+                                <span class="middle">Каталог товаров</span>
+                            </a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Оленина</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Свежемороженая</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Субпродукты</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Полуфабрикаты из оленины</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Котлеты</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Колбаски</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Пельмени</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Зразы</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Деликатесы из оленины</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Вяленые</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Копченые</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Прессованные</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Рыба</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Свежемороженая</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Копченая</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Полуфабрикаты</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Дикоросы</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Грибы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Овощи</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> <!-- catalog-btn end -->
+                    </div>
+                    <div class="col-md-7">
+                        <ul class="header-menu">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Где купить</a></li>
+                            <li><a href="#">Оптовикам</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="shopping-cart">
+                            <a href="#">
+                                <div class="middle cart-icon"></div>
+                                <div class="middle">
+                                    <div class="cart-title">
+                                        <span>Корзина (5)</span>
+                                    </div>
+                                    <div class="cart-price">
+                                        <span>27090 руб.</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div> <!-- shopping-cart end -->
+                    </div>
+                </div> <!-- row end -->
+            </div>
+        </nav> <!-- nav-desktop end -->
+        <nav class="navbar navbar-expand-lg navbar-mobile">
+            <div class="container">
+                <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false" aria-label="Toggle navigation">
+                    <div id="mob-menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>Меню</span>
+                </a>
+                <div class="collapse navbar-collapse" id="navbar-mobile">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Каталог товаров</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Где купить</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Оптовикам</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="shopping-cart">
+                        <a href="#">
+                            <div class="middle cart-icon"></div>
+                            <div class="middle">
+                                <div class="cart-title">
+                                    <span>Корзина (5)</span>
+                                </div>
+                                <div class="cart-price">
+                                    <span>27090 руб.</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!-- shopping-cart end -->
+                </div>
+            </div>
+        </nav> <!-- navbar-mobile end -->
+    </header>
+    <section class="slider-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                            <li data-target="#carousel" data-slide-to="2"></li>
+                            <li data-target="#carousel" data-slide-to="3"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active slide-1">
+                                <div class="slide-content">
+                                    <h1>Сибирские деликатесы Таймыра</h1>
+                                    <p>Энергия севера в каждом продукте</p>
+                                    <a class="grad-btn" href="#">В каталог</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item slide-2">
+                                <div class="slide-content">
+                                    <h1>Сибирские деликатесы Таймыра</h1>
+                                    <p>Энергия севера в каждом продукте</p>
+                                    <a class="grad-btn" href="#">В каталог</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item slide-3">
+                                <div class="slide-content">
+                                    <h1>Сибирские деликатесы Таймыра</h1>
+                                    <p>Энергия севера в каждом продукте</p>
+                                    <a class="grad-btn" href="#">В каталог</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item slide-4">
+                                <div class="slide-content">
+                                    <h1>Сибирские деликатесы Таймыра</h1>
+                                    <p>Энергия севера в каждом продукте</p>
+                                    <a class="grad-btn" href="#">В каталог</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- slider-block end -->
+    <section class="delicacies">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 text-center">
+                    <div class="delicacies-heading">
+                        <h2>Деликатесы от производителя</h2>
+                        <p>Производим деликатесы и полуфабрикаты из дичи и дикоросов Таймыра и Сибири с 2010 года. Готовим только то, что с удовольствием едим сами.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <a href="#">
+                        <div class="delicacy-item">
+                            <div class="delicacy-img" style="background-image: url(img/delicacy-1.jpg)"></div>
+                            <div class="delicacy-descr">
+                                <h4>Оленина</h4>
+                                <p>Свежемороженая, субпродукты</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <a href="#">
+                        <div class="delicacy-item">
+                            <div class="delicacy-img" style="background-image: url(img/delicacy-2.jpg)"></div>
+                            <div class="delicacy-descr">
+                                <h4>Полуфабрикаты из оленины</h4>
+                                <p>Котлеты, колбаски, пельмени, зразы</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <a href="#">
+                        <div class="delicacy-item">
+                            <div class="delicacy-img" style="background-image: url(img/delicacy-3.jpg)"></div>
+                            <div class="delicacy-descr">
+                                <h4>Деликатесы из оленины</h4>
+                                <p>Вяленые, копченые, прессованные</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <a href="#">
+                        <div class="delicacy-item">
+                            <div class="delicacy-img" style="background-image: url(img/delicacy-4.jpg)"></div>
+                            <div class="delicacy-descr">
+                                <h4>Рыба</h4>
+                                <p>Свежемороженая, копченая, полуфабрикаты</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <a href="#">
+                        <div class="delicacy-item">
+                            <div class="delicacy-img" style="background-image: url(img/delicacy-5.jpg)"></div>
+                            <div class="delicacy-descr">
+                                <h4>Дикоросы</h4>
+                                <p>Грибы и овощи</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <a href="#">
+                        <div class="delicacy-item">
+                            <div class="delicacy-img" style="background-image: url(img/delicacy-6.jpg)"></div>
+                            <div class="delicacy-descr">
+                                <h4>Ягоды</h4>
+                                <p>Свежемороженые</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> <!-- delicacies end -->
+    <section class="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Лучший подарок из Сибири — продукты «ЭкоТаймыр»</h2>
+                </div>
+            </div>
+            <div class="products-row">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="product-img">
+                            <img class="img-fluid" src="img/dich.jpg" alt="Dich">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="product-desc">                          
+                            <h3>Настоящая дичь и дикоросы</h3>
+                            <p>Уникальность нашей продукции в том, что это именно дичь и дикоросы в полном понимании. Никаких пастбищ и аквариумов, искусственно выращенных ягод и грибов; никакого прикорма и антибиотиков. Только здоровые животные и растения, которые выживают в дикой природе сами. Они растут в естественных условиях и питаются только тем, что добывают на суровой земле Таймыра, обогащенной минералами и витаминами.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- products-row end -->
+            <div class="products-row product-middle">
+                <div class="row">
+                    <div class="col-md-5 order-2">
+                        <div class="product-img">
+                            <img class="img-fluid" src="img/bez-krasiteley.jpg" alt="Natural">
+                        </div>
+                    </div>
+                    <div class="col-md-7 order-1">
+                        <div class="product-desc">                           
+                            <h3>Без красителей и консервантов</h3>
+                            <p>Мы принципиально отказались от использования красителей, консервантов и другой химии. Термическая обработка производится в щадящем режиме для сохранения уникальных свойств, витаминов и минералов. Мы выросли на Таймыре, с уважением относимся к местной самобытной природе, знаем, как приготовить дичь так, чтобы она была вкусной и сохранила все свои полезные свойства.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- products-row end -->
+            <div class="products-row">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="product-img">
+                            <img class="img-fluid" src="img/chisto-eko.jpg" alt="Eko">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="product-desc">                          
+                            <h3>Чистейшая экологичная продукция</h3>
+                            <p>Вся продукция собирается и заготавливается в чистой российской глубинке — на Крайнем Севере, вблизи Северного Ледовитого океана. Сложно представить себе более чистое, холодное, экологичное и истинно дикое место. Это действительно чистейшая и безопасная продукция.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- products-row end -->
+        </div>
+    </section> <!-- products end -->
+    <section class="clients">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 text-center">
+                    <div class="clients-heading">
+                        <h2>Наши основные клиенты</h2>
+                        <p>Предлагаем оленину и другие северные деликатесы от производителя оптом —
+                            для дальнейшей реализации</p>
+                    </div>
+                </div>
+            </div>
+            <div class="client-blocks">
+                <div class="clients-row">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="client">
+                                <div class="row no-gutters">
+                                    <div class="col-2">
+                                        <hr>
+                                    </div>
+                                    <div class="col-10">
+                                        <h5>Бары и рестораны с отличной кухней</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="client">
+                                <div class="row no-gutters">
+                                    <div class="col-2">
+                                        <hr>
+                                    </div>
+                                    <div class="col-10">
+                                        <h5>Владельцы магазинов уникальных продуктов</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="client">
+                                <div class="row no-gutters">
+                                    <div class="col-2">
+                                        <hr>
+                                    </div>
+                                    <div class="col-10">
+                                        <h5>Менеджеры по закупкам для компаний HoReCa</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clients-row">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="client">
+                                <div class="row no-gutters">
+                                    <div class="col-2">
+                                        <hr>
+                                    </div>
+                                    <div class="col-10">
+                                        <h5>Производители полуфабрикатов</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="client">
+                                <div class="row no-gutters">
+                                    <div class="col-2">
+                                        <hr>
+                                    </div>
+                                    <div class="col-10">
+                                        <h5>Кейтеринговые организации, ищущие продукты-диковинки</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="client">
+                                <div class="row no-gutters">
+                                    <div class="col-2">
+                                        <hr>
+                                    </div>
+                                    <div class="col-10">
+                                        <h5>Интернет-магазины, рынки, пивники</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- client-blocks end -->
+            <div class="client-order">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <p>Обращайтесь, обязательно <span>подберем оленину</span>, а также другие деликатесы
+                                под ваши потребности и задачи</p>
+                            <a href="#" class="grad-btn">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- client-order end -->
+        </div>
+    </section> <!-- clients end -->
+    <section class="standards">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 text-center">
+                    <div class="standards-heading">
+                        <h2>Десять стандартов, которыми мы гордимся</h2>
+                        <p>ЭкоТаймыр — семейное предприятие замкнутого цикла. Мы — хозяева, и сами продумали от и до наше предложение, возможности, правила работы, нашли свою уникальность и бережно ее сохраняем</p>
+                    </div>
+                </div>
+            </div>
+            <div class="standard-list">
+                <div class="standards-row">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="img/natural.png" alt="Natural">
+                                </div>
+                                <div class="col-10">
+                                    <h4>100% натурально</h4>
+                                    <p>В составе нет сои, красителей, консервантов, хлеба,
+                                        ГМО и других химических добавок.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="img/legal.png" alt="Legal">
+                                </div>
+                                <div class="col-10">
+                                    <h4>Легально</h4>
+                                    <p>Имеем все необходимые сертификаты на продукцию, собственный бренд и авторское право, лицензии на отлов. Все честно и законно.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- standards-row end -->
+                <div class="standards-row">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="img/eco.png" alt="Eco">
+                                </div>
+                                <div class="col-10">
+                                    <h4>Экологично</h4>
+                                    <p>Таймыр — чистейшее место, идеальное для отлова
+                                        дичи и сбора дикоросов.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="img/delivery.png" alt="Delivery">
+                                </div>
+                                <div class="col-10">
+                                    <h4>Доставка</h4>
+                                    <p>Привезем заказы в любой регион России, сотрудничаем с надежными авиа-, авто- и ж/д перевозчиками.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- standards-row end -->
+                <div class="standards-row">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="img/reciept.png" alt="Reciept">
+                                </div>
+                                <div class="col-10">
+                                    <h4>Собвственная рецептура</h4>
+                                    <p>Способы приготовления продуктов — результат семейного труда. Рецепты нигде больше не повторяются.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="img/obratnaja.png" alt="Feedback">
+                                </div>
+                                <div class="col-10">
+                                    <h4>Обратная связь</h4>
+                                    <p>Дорожим своими клиентами и внимательно изучаем обратную связь, чтобы поставлять именно то, что нужно каждому заказчику.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- standards-row end -->
+                <div class="standards-row">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="img/quality.png" alt="Quality">
+                                </div>
+                                <div class="col-10">
+                                    <h4>Качество</h4>
+                                    <p>Внедрили на предприятии программу контроля ХАССП. Проводим лабораторные исследования, контроль на входе сырья и выпуске продукции.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="img/clear.png" alt="Clear">
+                                </div>
+                                <div class="col-10">
+                                    <h4>Прозрачность</h4>
+                                    <p>Декларируем прозрачность работы и в буквальном смысле тоже: не прячем продукт в сложную упаковку, все сразу видно в прозрачных вакуумных пакетах.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- standards-row end -->
+                <div class="standards-row">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="img/individual.png" alt="Individual">
+                                </div>
+                                <div class="col-10">
+                                    <h4>Индивидуальный подход</h4>
+                                    <p>Делаем разную фасовку, помогаем с выбором, меняем рецептуру согласно вашим предпочтениям. Вы точно получите то, что вам нужно.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="img/meat.png" alt="Meat">
+                                </div>
+                                <div class="col-10">
+                                    <h4>Ассортимент</h4>
+                                    <p>Предлагаем купить в одном месте максимально широкую линейку продуктов из дикой оленины, даров Крайнего Севера.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- standards-row end -->
+            </div> <!-- standard-list end -->
+        </div>
+    </section> <!-- standards end -->
+    <section class="presents">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="presents-caption">
+                        <h2>Лучший способ оценить северные гостинцы — попробовать их</h2>
+                        <p>Подумайте о расширении собственного ассортимента продуктов для гурманов, состоятельных клиентов, сторонников ЗОЖ. Присылайте свои вопросы и пожелания — мы вместе решим, чем привлечь ваших клиентов, подстроимся под запросы вашей целевой аудитории.</p>
+                        <p>Заказывайте ни с чем не сравнимые деликатесы из удивительного края вечной мерзлоты, и увеличивайте поток своих клиентов и средний чек.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="presents-picture">
+                        <img class="img-fluid" src="img/meat.jpg" alt="Meat">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- presents end -->
+    <section class="make-order">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="make-order-caption">
+                        <img src="img/olen.png" alt="Olen">
+                        <h4>Оставьте заявку</h4>
+                        <p>или заполните форму обратной связи
+                            и мы с вами свяжемся</p>
+                    </div>
+                </div>
+                <div class="col-md-8 text-right">
+                    <div class="make-order-buttons">
+                        <a href="#" class="grad-btn">Оставить заявку</a>
+                        <a href="#" class="call-manager-btn">Связаться с менеджером</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- make-order -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer-logo">
+                        <img src="img/logo-footer.png" alt="Logo">
+                        <p>Производство продукh6ции из дичи
+                            и дикоросов Таймыра и Сибири. </p>
+                        <p>ИП Резяпкин Д.В., ОГРН 308246825600220</p>
+                        <div class="footer-awards">
+                            <span class="award"><img src="img/quality-seal-1.png" alt="Quality seal"></span>
+                            <span class="award"><img src="img/quality-seal-2.png" alt="Quality seal"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">ГЛАВНАЯ</a></li>
+                            <li><a href="#">КАТАЛОГ</a></li>
+                            <li><a href="#">О КОМПАНИИ</a></li>
+                            <li><a href="#">ДОСТАВКА</a></li>
+                            <li><a href="#">ГДЕ КУПИТЬ</a></li>
+                            <li><a href="#">ОПТОВИКАМ</a></li>
+                            <li><a href="#">КОНТАКТЫ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="footer-managers">
+                        <h6>Менеджеры</h6>
+                        <div class="staff">
+                            <p>Федорова Ирина<br>
+                                8 (908) 224 22 44</p>
+                            <a href="mailto:irina@eco-taimyr.ru">irina@eco-taimyr.ru</a>
+                        </div>
+                        <div class="staff">
+                            <p>Применова Жанна<br>
+                                8 (950) 422 24 40</p>
+                            <a href="mailto:janna@eco-taimyr.ru">janna@eco-taimyr.ru</a>
+                        </div>
+                        <h6>Директор</h6>
+                        <div class="staff">
+                            <p>Резяпкина Ангелина<br>
+                                8 (902) 942 39 92</p>
+                            <a href="mailto:angel@eco-taimyr.ru">angel@eco-taimyr.ru</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-12">
+                    <div class="office">
+                        <h6>Офис</h6>
+                        <p>г. Красноярск,
+                            ул. Дубровинского, 110,
+                            оф. 605</p>
+                        <a class="order-call" href="#" data-toggle="modal" data-target="#popup" data-whatever="modal"> Заказать звонок
+                        </a>
+                        <div class="office-phones">
+                            <p>8 (908) 224 22 44<br>
+                                8 (950) 422 24 40</p>
+                        </div>
+                        <div class="messengers">
+                            <a href="#" class="whatsapp"></a>
+                            <a href="#" class="viber"></a>
+                            <a href="#" class="telegram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="row justify-content-between text-center">
+                    <div class="col-lg-3 col-sm-12">
+                        <p>© ЭкоТаймыр, 2010 – 2018 </p>
+                    </div>
+                    <div class="col-lg-3 col-sm-12">
+                        <p><a href="#">Политика конфиденциальности</a></p>
+                    </div>
+                    <div class="col-lg-3 col-sm-12">
+                        <p>Разработка сайта — <a href="#" id="dev">Dotssy</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal fade modal--black" id="popup" role="dialog" tabindex="-1" aria-labelledby="popup" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-label">Заказать звонок</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Ваше имя:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-number" class="col-form-label">Ваш номер:</label>
+                            <input type="text" class="form-control" id="message-number">
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id='news-letters' name="accept">
+                            <label for="news-letters">Я согласен получать рекламные оповещения</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="order-call" class="btn grad-btn">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- modal end -->
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
