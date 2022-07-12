@@ -1,0 +1,451 @@
+@media (max-width: 1462px) {
+	.solutions-images {
+		flex-wrap: wrap;
+		row-gap: 20px;
+		justify-content: center;
+	}
+	
+	.solutions-images img:first-of-type {
+		align-self: flex-start;
+	}
+
+	.solutions-content {
+		justify-content: center;
+	}
+
+	.services {
+		background: #e6eef0;
+	}
+
+	.services:before {
+		content: "";
+	}
+
+	.services-content {
+		justify-content: center;
+		row-gap: 30px;
+	}
+
+	.services-col {
+		margin-right: 20px;
+	}
+
+	.services-col:last-of-type {
+		margin-top: 30px;
+		max-width: 100%;
+	}
+
+	.more-services {
+		min-height: 200px;
+	}
+}
+
+@media (max-width: 1160px) {
+	.carousel .slide-control {
+		display: none;
+	}
+
+	.carousel .slide-block .slide {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 1085px) {
+	.header-content {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	
+	.header-text {
+		padding: 30px;
+	}
+
+	.header-text h1 {
+		font-size: 55px;
+		line-height: 62px;
+	}
+
+	.header-text p {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	.header-text .button {
+		font-size: 20px;
+	}
+
+	.header-socials {
+		margin: 120px 40px 0 0;
+	}
+
+	.header-text-waves {
+		display: none;
+	}
+
+	.solutions {
+		padding: 0 0 80px 0;
+	}
+}
+
+@media (max-width: 1053px) {
+	.people::before {
+		content: "";
+	}
+
+	.people {
+		background: #fefffe;
+	}
+
+	.slide .slide-img {
+		top: 30px;
+		position: relative;
+	}
+
+	.slide-quote {
+		left: 0;
+		padding: 0 25px 56px 25px;
+		background: rgba(226, 226, 226, 0.5);
+	}
+
+	.slide-quote .quotes {
+		display: none;
+	}
+}
+
+@media (max-width: 1010px) {
+	nav .navbar .links {
+		column-gap: 20px;
+	}
+}
+
+@media (max-width:997px) {
+	.work-card {
+		padding: 20px 40px 49px 40px;
+	}
+
+	.work-card h2 {
+		font-size: 50px;
+	}
+
+	.work-card h4 {
+		font-size: 28px;
+		margin-top: 15px;
+	}
+
+	.work-card p {
+		font-size: 18px;
+		margin-top: 15px;
+	}
+	
+	.work-cards,
+	.posts-section {
+		justify-content: center;
+	}
+
+}
+
+@media (max-width:900px) {
+
+	.navbar .fa-bars {
+		display: block;
+	}
+
+	nav .navbar .nav-links {
+		position: fixed;
+		top: 0;
+		left: -100%;
+		display: block;
+		max-width: 270px;
+		width: 100%;
+		background: rgba(78, 78, 78, 1);;
+		line-height: 40px;
+		padding: 20px;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+		transition: all 0.5s ease;
+		z-index: 1000;
+		overflow-y: scroll;
+	}
+
+	nav .navbar .nav-links ul li {
+		margin-top: 10px;
+	}
+
+	nav .navbar .nav-links ul li i {
+		line-height: 10px;
+	}
+
+	nav .navbar .nav-links ul li a {
+		font-size: 20px;
+	}
+
+	.navbar .nav-links .sidebar-logo {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.sidebar-logo .logo-name {
+		font-size: 25px;
+		color: #66B5AC;
+	}
+
+	.sidebar-logo i,
+	.navbar .fa-bars {
+		font-size: 25px;
+		color: #fff;
+	}
+
+	nav .navbar .links {
+		display: block;
+		margin-top: 20px;
+	}
+
+	nav .navbar .links li .arrow {
+		line-height: 1;
+	}
+
+	nav .navbar .links li {
+		display: block;
+	}
+
+	nav .navbar .links li .sub-menu {
+		position: relative;
+		top: 0;
+		box-shadow: none;
+		display: none;
+	}
+
+	nav .navbar .links li .sub-menu li {
+		border-bottom: none;
+
+	}
+
+	#col-2 a:first-of-type {
+		margin-bottom: 15px;
+	}
+
+	.projects-row+.projects-row {
+		margin-top: 15px;
+	}
+}
+
+@media (max-width: 860px) {
+	.interiors {
+		padding: 50px 0 0 0;
+	}
+	
+	.interiors-content {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+	.interiors-text {
+		position: relative;
+		right: 0;
+		top: -50px;
+		margin-top: 25px;
+		max-width: 100%;
+		background: rgba(255, 255, 255, .9);
+	}
+}
+
+@media (max-width: 540px) {
+	.header-content {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	
+	.header-text h1 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	.header-text p {
+		font-size: 18px;
+	}
+
+	.solutions {
+		padding-bottom: 50px;
+	}
+
+	.solutions-text {
+		margin-top: 30px;
+	}
+
+	.solutions-text>h3,
+	.interiors-text h3,
+	.more-services h3,
+	.projects-title h3,
+	.work-content h3,
+	.people-content h3,
+	.posts-content h3 {
+		margin-bottom: 20px;
+		font-size: 35px;
+	}
+	
+	.solutions-text>p,
+	.interiors-text p,
+	.more-services p {
+		font-size: 18px;
+	}
+
+	.stats-col h3 {
+		font-size: 45px;
+	}
+
+	.stats-col p {
+		font-size: 16px;
+	}
+
+	.stats-col {
+		padding: 0 10px;
+	}
+
+	.interiors-text {
+		padding: 20px;
+	}
+
+	.services {
+		padding: 30px 0;
+	}
+
+	.services-col {
+		margin-right: 0;
+	}
+
+	.projects {
+		padding: 30px 0;
+	}
+
+	.projects-row {
+		flex-wrap: wrap;
+	}
+
+	.projects-row+.projects-row {
+		margin-top: 0;
+	}
+
+	.projects-row .projects-col + .projects-col {
+		margin-left: 0;
+	}
+
+	.project-cases {
+		margin-top: 30px;
+	}
+
+	.projects-col a {
+		margin-top: 20px;
+	}
+
+	.work {
+		padding: 30px 0;
+	}
+
+	.people {
+		padding: 30px 0;
+	}
+
+	.carousel {
+		margin-top: 0px;
+	}
+
+	.posts {
+		padding: 30px 0;
+	}
+}
+
+@media (max-width: 520px) {
+	.footer {
+		padding: 30px 0;
+	}
+}
+
+@media (max-width: 485px) {
+	.posts-section .post {
+		padding: 30px 25px;
+	}
+
+	.posts-section .post h5 {
+		font-size: 20px;
+	}
+
+	.posts-section .post p {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 416px) {
+	.header-content {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	.header-text h1 {
+		font-size: 36px;
+	}
+
+	.header-socials {
+		display: none;
+	}
+
+	.vacancies-content {
+		column-gap: 10px;
+	}
+}
+
+@media (max-width:395px) {
+	.solutions-images {
+		display: none;
+	}
+}
+
+@media (max-width:375px) {
+	.slide-quote>p {
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
+
+@media (max-width:370px) {
+	nav .navbar .nav-links {
+		max-width: 100%;
+	}
+
+	.service-card {
+		padding: 30px 20px;
+	}
+}
+
+@media (max-width:340px) {
+	.header .logo a {
+		font-size: 30px;
+	}
+
+	nav .navbar {
+		padding: 0 10px;
+	
+	}
+
+	.navbar .search-box .input-box {
+		right: calc(100% - 90px);
+
+		width: 250px;
+	}
+
+	.navbar .search-box .input-box input {
+		width: 230px;
+	}
+}
+
+@media (max-width:300px) {
+	.posts-section .post.main-post::before {
+		content: "";
+	}
+
+	.footer-brand p,
+	.footer-bottom small {
+		font-size: 16px;
+	}
+}

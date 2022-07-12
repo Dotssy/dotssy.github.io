@@ -86,10 +86,6 @@ h5, h6          { font-weight: bolder }
     *zoom: 1;
 }
 
-
-
-
-
 header {
   border-right: 2px solid #C1C1C1;
   background-color: #f6f6f6;
@@ -252,11 +248,6 @@ header {
     background-position: -41px 0!important;
 }
 
-
-
-
-
-
 /*  Main  */
 .main{
     width: 100%;
@@ -270,12 +261,6 @@ header {
     background: #E1E1E1;
     clear: both;
 }
-
-
-
-
-
-
 
 /*  Home/portfolio  */
 .main .work{
@@ -331,12 +316,6 @@ header {
     border-bottom: 1px solid #bfbbbb;
     border-top: 1px solid #bfbbbb;
 }
-
-
-
-
-
-
 
 /*  Inner Page  */
 .top{
@@ -457,12 +436,6 @@ header {
 
 }
 
-
-
-
-
-
-
 /*  Contact page map  */
 #map .map_adresse{
     font-family: 'raleway-regular', arial;
@@ -485,12 +458,6 @@ header {
 #map img{
     max-width: none;
 }
-
-
-
-
-
-
 
 /*  Tooltip  */
 .tooltip{
@@ -523,12 +490,6 @@ header {
     left: 50%;
     margin-left: -3px;
 }
-
-
-
-
-
-
 
 /*  Responsive code  */
 @media (max-width:1350px){
