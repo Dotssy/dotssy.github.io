@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shady Rhymes</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container header__container">
+			<a href="#!" class="logo">
+				<img src="./img/logo.svg" alt="logo">
+			</a>
+
+			<nav class="header__nav">
+				<ul>
+					<li>
+						<a class="submenu" href="#!">
+							Furniture
+							<svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 1L4.5 4L8 1" stroke="white"/>
+							</svg>
+						</a>
+
+						<ul class="dropdown">
+							<li><a href="#!">Sofas</a></li>
+							<li><a href="#!">Chairs</a></li>
+							<li><a href="#!">Tables</a></li>
+							<li><a href="#!">Beds</a></li>
+						</ul>
+					</li>
+					<li><a href="#!">Shop</a></li>
+					<li><a href="#!">About Us</a></li>
+					<li><a href="#!">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="shopping-bag-wrapper">
+				<a href="#!" class="header__shopping-bag btn-opacity">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8 8L8 7C8 4.79086 9.79086 3 12 3V3C14.2091 3 16 4.79086 16 7L16 8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M3.58579 7.58579C3 8.17157 3 9.11438 3 11V14C3 17.7712 3 19.6569 4.17157 20.8284C5.34315 22 7.22876 22 11 22H13C16.7712 22 18.6569 22 19.8284 20.8284C21 19.6569 21 17.7712 21 14V11C21 9.11438 21 8.17157 20.4142 7.58579C19.8284 7 18.8856 7 17 7H7C5.11438 7 4.17157 7 3.58579 7.58579ZM10 12C10 11.4477 9.55228 11 9 11C8.44772 11 8 11.4477 8 12V14C8 14.5523 8.44772 15 9 15C9.55228 15 10 14.5523 10 14V12ZM16 12C16 11.4477 15.5523 11 15 11C14.4477 11 14 11.4477 14 12V14C14 14.5523 14.4477 15 15 15C15.5523 15 16 14.5523 16 14V12Z" fill="white"/>
+					</svg>
+				</a>
+
+				<button type="button" class="menu-icon">
+					<div class="menu-icon__line"></div>
+				</button>
+			</div>
+
+		</div>
+	</header>
+
+	<main class="main">
+
+		<section class="welcome">
+			<!-- Swiper Slider -->
+			<div class="swiper welcome__slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="img/main-bg1.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="img/main-bg2.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="img/main-bg3.jpg" />
+					</div>
+				</div>
+
+				<div class="swiper-pagination"></div>
+			</div>
+
+			<div class="container">
+				<div class="welcome__content">
+
+					<h1 class="welcome__title">Make Your Interior More Minimaistic & Modern</h1>
+
+					<p class="welcome__subtitle">
+						Bringing interiors to life, understanding the person or people living in a home is far greater need in design.
+					</p>
+
+					<form class="welcome__search" action="#!">
+						<input class="welcome__search-input" type="text" placeholder="Search Furniture">
+						<div class="search-btn-wrapper">
+							<button class="welcome__search-submit btn-opacity" type="submit">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="11" cy="11" r="5" stroke="#A09386" stroke-width="2"/>
+									<path d="M18 18L15 15" stroke="#A09386" stroke-width="2" stroke-linecap="round"/>
+								</svg>
+							</button>
+						</div>
+					</form>
+					
+				</div>
+			</div>
+		</section> <!--Welcome end-->
+
+		<section class="about">
+			<div class="container">
+				<h2 class="title">Why Choosing Us</h2>
+
+				<div class="about__cards-wrapper">
+
+					<div class="about__card-item">
+						<div class="about__card-icon">
+							<img src="./img/about1.svg" alt="icon">
+						</div>
+
+						<h4 class="about__card-title">Professionalism</h4>
+
+						<p class="about__card-text text">We deliver the final work with great professional way.</p>
+
+						<a class="common-link" href="#!">more info</a>
+					</div>
+
+					<div class="about__card-item">
+						<div class="about__card-icon">
+							<img src="./img/about2.svg" alt="icon">
+						</div>
+
+						<h4 class="about__card-title">Smooth workflow</h4>
+
+						<p class="about__card-text text">We provide the most easy smoth workflow of interior design.</p>
+
+						<a class="common-link" href="#!">more info</a>
+					</div>
+
+					<div class="about__card-item">
+						<div class="about__card-icon">
+							<img src="./img/about3.svg" alt="icon">
+						</div>
+
+						<h4 class="about__card-title">Trusted Platform</h4>
+
+						<p class="about__card-text text">People trust us since we openend the company</p>
+
+						<a class="common-link" href="#!">more info</a>
+					</div>
+
+					<div class="about__card-item">
+						<div class="about__card-icon">
+							<img src="./img/about4.svg" alt="icon">
+						</div>
+
+						<h4 class="about__card-title">Qualified employee</h4>
+
+						<p class="about__card-text text">Our employees are the best of the field from the city</p>
+
+						<a class="common-link" href="#!">more info</a>
+					</div>
+
+				</div>
+			</div>
+		</section> <!--About end-->
+
+		<section class="ideas">
+			<div class="container">
+
+				<div class="ideas__content-wrapper">
+
+					<div class="ideas__text-content">
+						<div class="ideas__heading">
+							<h2 class="ideas__title title">Visualize your ideas with us</h2>
+							<p class="ideas__title-text text">
+								We are ready to help you build and also realize the room design 
+								that you dream of, with our experts and also the best category recommendations from us
+							</p>
+						</div>
+
+						<div class="ideas__accordion">
+
+							<button class="accordion__btn active">Modern</button>
+							<div class="accordion__panel show">
+								<p class="accordion__panel-text text">Modern design is a term in the design world that refers to a house with a clean design, simple color choices, the use of materials including metal, glass, and steel, and is usually accompanied by clean lines.
+								</p>
+							</div>
+
+							<button class="accordion__btn">Contemporary</button>
+							<div class="accordion__panel">
+								<p class="accordion__panel-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, dolor earum aspernatur optio vel dolorem laboriosam sequi ad repudiandae a?
+								</p>
+							</div>
+
+							<button class="accordion__btn">Minimalis</button>
+							<div class="accordion__panel">
+								<p class="accordion__panel-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cupiditate sit tenetur voluptate corrupti adipisci deserunt consequuntur ipsam at pariatur porro optio, atque eaque illum?
+								</p>
+							</div>
+
+							<button class="accordion__btn">Industrial</button>
+							<div class="accordion__panel">
+								<p class="accordion__panel-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquid quasi omnis natus voluptatum vel commodi eos corporis molestias voluptate.
+								</p>
+							</div>
+
+						</div>
+
+						<a href="#!" class="common-link">See more catagory</a>
+					</div>
+
+					<div class="ideas__image">
+						<img src="./img/interior1.png" alt="Interior">
+					</div>
+				</div>
+
+			</div>
+		</section> <!--Ideas end-->
+
+		<section class="products">
+			<div class="container">
+				<h2 class="products__title title">Featured Product</h2>
+
+				<div class="products__content-wrapper">
+
+					<div class="product-items-col">
+						<div class="products__item">
+							<div class="products__item-img">
+								<img src="./img/chair1.png" alt="Product image">
+							</div>
+	
+							<div class="products__item-info">
+								<a href="#!" class="products__item-title">Product</a>
+								<p class="products__item-category">Category</p>
+								<div class="products__item-rating">
+									<img src="./img/star.svg" alt="Star">
+									<img src="./img/star.svg" alt="Star">
+									<img src="./img/star.svg" alt="Star">
+									<img src="./img/star.svg" alt="Star">
+									<img src="./img/star.svg" alt="Star">
+								</div>
+								<p class="products__item-price">IDR 795.000</p>
+							</div>
+						</div>
+	
+						<div class="products__item">
+							<div class="products__item-img">
+								<img src="./img/chair2.png" alt="Product image">
+							</div>
+	
+							<div class="products__item-info">
+								<a href="#!" class="products__item-title">Product</a>
+								<p class="products__item-category">Category</p>
+								<div class="products__item-rating">
+									<img src="./img/star.svg" alt="Star">
+									<img src="./img/star.svg" alt="Star">
+									<img src="./img/star.svg" alt="Star">
+									<img src="./img/star.svg" alt="Star">
+									<img src="./img/star.svg" alt="Star">
+								</div>
+								<p class="products__item-price">IDR 595.000</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="product-items-col">
+						<div class="products__item">
+							<div class="products__item-img">
+								<img src="./img/chair3.png" alt="Product image">
+							</div>
+	
+							<div class="products__item-info">
+								<a href="#!" class="products__item-title">Product</a>
+								<p class="products__item-category">Category</p>
+								<div class="products__item-rating">
+									<img src="./img/star.svg" alt="Star">
+									<img src="./img/star.svg" alt="Star">
+									<img src="./img/star.svg" alt="Star">
+									<img src="./img/star.svg" alt="Star">
+									<img src="./img/star.svg" alt="Star">
+								</div>
+								<p class="products__item-price">IDR 2.555.000</p>
+							</div>
+						</div>
+	
+						<div class="products__item">
+							<div class="products__item-img">
+								<img src="./img/chair4.png" alt="Product image">
+							</div>
+	
+							<div class="products__item-info">
+								<a href="#!" class="products__item-title">Product</a>
+								<p class="products__item-category">Category</p>
+								<div class="products__item-rating">
+									<img src="./img/star.svg" alt="Star">
+									<img src="./img/star.svg" alt="Star">
+									<img src="./img/star.svg" alt="Star">
+									<img src="./img/star.svg" alt="Star">
+									<img src="./img/star.svg" alt="Star">
+								</div>
+								<p class="products__item-price">IDR 1.500.000</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section> <!--Products end-->
+
+		<section class="testimonials">
+			<div class="container">
+				<h2 class="testimonials__title title">What they say about our services</h2>
+
+				<div class="swiper testimonials__slider">
+					<div class="swiper-wrapper testimonials__slider-wrapper">
+
+						<div class="swiper-slide quotes-group">
+	
+							<div class="testimonials__slide-item">
+								<div class="slide-text-wrapper">
+									<h3 class="testimonials__slide-title">Best planning service</h3>
+	
+									<p class="testimonials__slide-text text">I had fantastic experience at shady rhymes with pax planner, shady rhymes was so helpful and friendly and went above and beyond to help me configure my perfect walk in wardobe room.</p>
+								</div>
+	
+								<div class="testimonials__slide-author">
+									<div class="testimonials__author-img">
+										<img src="./img/person1.png" alt="Author">
+									</div>
+									<div class="testimonials__author-info">
+										<p class="author-name">John doe</p>
+										<p class="author-post">Project manager of cupalo</p>
+									</div>
+								</div>
+							</div>
+	
+							<div class="testimonials__slide-item">
+								<div class="slide-text-wrapper">
+									<h3 class="testimonials__slide-title">Flexible and reliable</h3>
+	
+									<p class="testimonials__slide-text text">Terrific work from beginning to end can work any angle from minimal help to complete project handling professional without a doubt!  Love!</p>
+								</div>
+	
+								<div class="testimonials__slide-author">
+									<div class="testimonials__author-img">
+										<img src="./img/person2.png" alt="Author">
+									</div>
+									<div class="testimonials__author-info">
+										<p class="author-name">Woods Moniq</p>
+										<p class="author-post">Freelancer</p>
+									</div>
+								</div>
+							</div>
+	
+							<div class="testimonials__slide-item">
+								<div class="slide-text-wrapper">
+									<h3 class="testimonials__slide-title">Solution innovative</h3>
+	
+									<p class="testimonials__slide-text text">"I loved working with Darla shady rhymes for about 2 years and highly recommend anyone looking for an interior designer agency who brings creativity but designs something that fits YOU and your style.</p>
+								</div>
+	
+								<div class="testimonials__slide-author">
+									<div class="testimonials__author-img">
+										<img src="./img/person3.png" alt="Author">
+									</div>
+									<div class="testimonials__author-info">
+										<p class="author-name">Denis Rara</p>
+										<p class="author-post">Architect at BPPLU</p>
+									</div>
+								</div>
+							</div>
+	
+						</div>
+
+						<div class="swiper-slide quotes-group">
+	
+							<div class="testimonials__slide-item">
+								<div class="slide-text-wrapper">
+									<h3 class="testimonials__slide-title">Lorem, ipsum dolor</h3>
+	
+									<p class="testimonials__slide-text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam reiciendis quam, enim molestias vero quo qui asperiores unde consequuntur autem? Suscipit excepturi ipsam eaque fuga quo dolores earum. Quia, sit!</p>
+								</div>
+	
+								<div class="testimonials__slide-author">
+									<div class="testimonials__author-img">
+										<img src="./img/person4.jpg" alt="Author">
+									</div>
+									<div class="testimonials__author-info">
+										<p class="author-name">Alex Doe</p>
+										<p class="author-post">Lorem, ipsum dolor.</p>
+									</div>
+								</div>
+							</div>
+	
+							<div class="testimonials__slide-item">
+								<div class="slide-text-wrapper">
+									<h3 class="testimonials__slide-title">Lorem ipsum dolor sit</h3>
+	
+									<p class="testimonials__slide-text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero eum placeat tenetur possimus obcaecati. Officia incidunt non amet labore facilis, delectus asperiores illum mollitia dolore.</p>
+								</div>
+	
+								<div class="testimonials__slide-author">
+									<div class="testimonials__author-img">
+										<img src="./img/person5.jpg" alt="Author">
+									</div>
+									<div class="testimonials__author-info">
+										<p class="author-name">Mark Doe</p>
+										<p class="author-post">CEO</p>
+									</div>
+								</div>
+							</div>
+	
+							<div class="testimonials__slide-item">
+								<div class="slide-text-wrapper">
+									<h3 class="testimonials__slide-title">Lorem, ipsum.</h3>
+	
+									<p class="testimonials__slide-text text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, quaerat necessitatibus ab saepe illum est quisquam laboriosam doloremque soluta. Excepturi dicta quasi quis quo amet, fugit laboriosam libero obcaecati suscipit.</p>
+								</div>
+	
+								<div class="testimonials__slide-author">
+									<div class="testimonials__author-img">
+										<img src="./img/person6.jpg" alt="Author">
+									</div>
+									<div class="testimonials__author-info">
+										<p class="author-name">John White</p>
+										<p class="author-post">Lorem, ipsum dolor.</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="swiper-slide quotes-group">
+	
+							<div class="testimonials__slide-item">
+								<div class="slide-text-wrapper">
+									<h3 class="testimonials__slide-title">Lorem, ipsum dolor</h3>
+	
+									<p class="testimonials__slide-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorum dolor suscipit tempore placeat? Nulla mollitia soluta voluptate, culpa error eos deserunt iste quasi distinctio ipsa aliquid commodi ratione similique.</p>
+								</div>
+	
+								<div class="testimonials__slide-author">
+									<div class="testimonials__author-img">
+										<img src="./img/person7.jpg" alt="Author">
+									</div>
+									<div class="testimonials__author-info">
+										<p class="author-name">John Doe</p>
+										<p class="author-post">Project manager of Lorem</p>
+									</div>
+								</div>
+							</div>
+	
+							<div class="testimonials__slide-item">
+								<div class="slide-text-wrapper">
+									<h3 class="testimonials__slide-title">Lorem ipsum</h3>
+	
+									<p class="testimonials__slide-text text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores debitis delectus maiores obcaecati reprehenderit, eveniet culpa, nemo iure ullam inventore, sapiente deleniti aperiam! Vitae, laboriosam velit accusamus illum magni ea.</p>
+								</div>
+	
+								<div class="testimonials__slide-author">
+									<div class="testimonials__author-img">
+										<img src="./img/person8.jpg" alt="Author">
+									</div>
+									<div class="testimonials__author-info">
+										<p class="author-name">Woods Moniq</p>
+										<p class="author-post">Trader</p>
+									</div>
+								</div>
+							</div>
+	
+							<div class="testimonials__slide-item">
+								<div class="slide-text-wrapper">
+									<h3 class="testimonials__slide-title">Lorem, ipsum dolor</h3>
+	
+									<p class="testimonials__slide-text text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi laudantium expedita tempora! Dignissimos incidunt perspiciatis voluptates quisquam debitis voluptatibus dolores iusto assumenda harum repudiandae?</p>
+								</div>
+	
+								<div class="testimonials__slide-author">
+									<div class="testimonials__author-img">
+										<img src="./img/person9.jpg" alt="Author">
+									</div>
+									<div class="testimonials__author-info">
+										<p class="author-name">Mark Black</p>
+										<p class="author-post">Carpenter</p>
+									</div>
+								</div>
+							</div>
+	
+						</div>
+	
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+
+			</div>
+		</section> <!--Testimonials end-->
+
+		<section class="interior">
+			<div class="container">
+				<div class="interior__content-wrapper">
+
+					<div class="interior__text-content">
+
+						<div class="interior__heading">
+							<h2 class="interior__title title">Make your room feel homey</h2>
+							<p class="interior__title-text text">We help people not only to make the room at home better, but we help people to feel a more homey and comfortable room, you don't have to worry about the result because of these interiors are made by people who are professionals in their dields with an elegant and lucuriois style and with premium quality materials</p>
+						</div>
+
+						<div class="contact-us-wrapper">
+							<p class="text">Contact us if you are interested in working with us</p>
+
+							<form class="interior__contact-us" action="#!">
+								<input class="interior__email-input" type="email" placeholder="Insert your email address">
+								<div class="submit-btn-wrapper">
+									<button class="interior__email-submit btn-opacity" type="submit">&#62;</button>
+								</div>
+							</form>
+						</div>
+						
+					</div>
+
+					<div class="interior__image">
+						<img src="./img/interior2.jpg" alt="Interior">
+					</div>
+
+				</div>
+			</div>
+		</section> <!--Interior end-->
+
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+
+			<div class="footer__content">
+
+				<div class="footer__logo-wrapper">
+					<a href="#!" class="footer__logo">
+						<img src="./img/logo.svg" alt="logo">
+					</a>
+				</div>
+
+				<div class="footer__features footer__list">
+					<h4 class="footer__col-title">Features</h4>
+					<ul>
+						<li><a href="#!">Our Features</a></li>
+						<li><a href="#!">Pricing</a></li>
+						<li><a href="#!">Affiliate Program</a></li>
+						<li><a href="#!">Press Kit</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__support footer__list">
+					<h4 class="footer__col-title">Support</h4>
+					<ul>
+						<li><a href="#!">Account</a></li>
+						<li><a href="#!">Help</a></li>
+						<li><a href="#!">Contact Us</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__legal footer__list">
+					<h4 class="footer__col-title">Legal</h4>
+					<ul>
+						<li><a href="#!">Privacy Policy</a></li>
+						<li><a href="#!">Terms of  Use</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__social footer__list">
+					<h4 class="footer__col-title">Social Media</h4>
+					<ul>
+						<li><a href="#!">Twitter</a></li>
+						<li><a href="#!">Product Hunt</a></li>
+						<li><a href="#!">Instagram</a></li>
+						<li><a href="#!">Github</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="footer__copy">
+				<small class="copy">Copyright 2021 &copy;shady rhymes</small>
+			</div>
+
+		</div>
+	</footer>
+
+
+	<!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
