@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	const testimonialsSlider = new Swiper(".testimonials__slider", {
 		slidesPerView: "auto",
-		initialSlide: 1,
+		// initialSlide: 1,
 		spaceBetween: 30,
 		centeredSlides: true,
 		navigation: {
